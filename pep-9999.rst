@@ -58,10 +58,10 @@ command ``cat $(find . -name '*.py') | grep -oi term | wc -l`` was used.
 This showed 2615 occurences for spam, 593 for ham (this include some
 false positives, among other reasons due to references to people whose
 name innociously contains the substring ham), 517 for eggs, 57 for bacon,
-and 10 for sausage.  Searching ``*.rst`` in the documentation revealed
-391 occurrences for spam, 82 for ham, 96 for eggs, 28 for bacon, and
-10 for sausage.  The source code for cpython revealed just 2 usages for
-spam and 1 for eggs.
+42 for cheese, 10 for sausage, and 3 for milkshake.  Searching ``*.rst``
+in the documentation revealed 391 occurrences for spam, 82 for ham, 96
+for eggs, 28 for bacon, 8 for cheese, and 10 for sausage.  The source
+code for cpython revealed just 2 usages for spam and 1 for eggs.
 
 
 Proposed alternatives
@@ -102,6 +102,9 @@ follow this practice.  In core Python:
 * Programmers SHALL NOT use the metasyntactic variable "eggs" in context with
   food items, but may still use it in context of other body parts.  Prohibited:
   ``["salad", "eggs"]``.  Allowed: ``["ovaries", "pouch", "eggs"]``.
+* Programmers SHALL NOT use the metasyntactic variables "cheese" or
+  "milkshake", unless it is clear from context that a plant-based alternative is
+  meant.
 * Programmers SHALL NOT use any other metasyntactic variable that is unfriendly
   to animals.
 
