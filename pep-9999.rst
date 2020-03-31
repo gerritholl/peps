@@ -10,17 +10,14 @@ Post-History: 01-Apr-2020
 Sponsor:
 
 
-.. note::
-    For those who have written a PEP before, there is a template_.
-
-
 Abstract
 ========
 
-Python has long used metasyntactic variables that are based on the consumption
-of meat and dairy products, such as "spam", "ham", and "eggs".  This language
-is not considerate to pigs or chicken.  This PEP proposes to retire the use of
-those variables in official Python documentation and source code and to
+Python has long used metasyntactic variables that are based on the
+consumption of meat and dairy products, such as "spam", "ham", and "eggs".
+This language is not considerate to pigs or chicken and violates the
+spirit of the Code of Conduct.  This PEP proposes to retire the use
+of those names in official Python documentation and source code and to
 recommend users of Python to do the same.
 
 
@@ -50,10 +47,11 @@ There is a widespread tradition in the Python standard library, the
 documentation, and the wider community, to include references to Monty
 Pythons Flying Circus.  The use of "spam", "bacon", "sausage", and
 "eggs" can be traced back to the `"Spam" sketch`_ originally broadcast
-on 8 September 1972.  In this sketch, a couple are trying to order food
-in a diner where all items contain spam.  The woman does not like spam
-and wants to order food without spam.  A group of horned vikings then
-sing about the wonderful spam.
+by the British Broadcasting Corporation (BBC) on 8 September 1972.
+In this sketch, a couple are trying to order food in a diner where all
+items contain spam.  The woman does not like spam and wants to order
+food without spam.  A group of horned vikings then sing about the
+wonderful spam.
 
 To get an overview of the usage in the current standard library, the
 command ``cat $(find . -name '*.py') | grep -oi term | wc -l`` was used.
@@ -98,13 +96,13 @@ products shall be removed from the Python standard library, the documentation,
 and the cpython source code.  The wider Python community is recommended to
 follow this practice.  In core Python:
 
-* Programmers MUST NOT use the metasyntactic variables "spam", "ham", "bacon",
+* Programmers SHALL NOT use the metasyntactic variables "spam", "ham", "bacon",
   or "sausage", neither as variable names, nor in example strings, nor in
   documentation.
-* Programmers MUST NOT use the metasyntactic variable "eggs" in context with
+* Programmers SHALL NOT use the metasyntactic variable "eggs" in context with
   food items, but may still use it in context of other body parts.  Prohibited:
   ``["salad", "eggs"]``.  Allowed: ``["ovaries", "pouch", "eggs"]``.
-* Programmers MUST NOT use any other metasyntactic variable that is unfriendly
+* Programmers SHALL NOT use any other metasyntactic variable that is unfriendly
   to animals.
 
 The wider Python community is encouraged to adopt these practices as well, but
